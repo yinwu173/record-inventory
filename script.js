@@ -6,17 +6,39 @@ const collectEmployees = function() {
   // TODO: Get user input to create and return an array of employee objects
   // created an array
   const employees = [];
+  let addAnotherEmployee = true
+
 
   //gather info by prompting user and using variables listed in my object
   const firstName = prompt("Please enter your first name")
   const lastName = prompt("Please enter your last name")
   const salary = prompt("Please enter your salary")
 
+
   //making an object to store user response
   const employee = {
     firstName: firstName,
     lastName: lastName,
     salary: salary
+  }
+
+  // ask user if they want to add another employee
+  const addMore = confirm("Would you like to add another employee?")
+
+  let (addAnotherEmployee) = true;
+
+    // add while loop so that user can choose to add another employee
+    while (addAnotherEmployee) {
+
+      // ask user for another employee's first and last name and salary
+      let firstName = prompt("Please enter your first name")
+      let lastName = prompt("Please enter your last name")
+      let salary = prompt("Please enter your salary")
+
+    // if user does not want to add another employee, it would end the function
+    if (!addAnotherEmployee) {
+      return;
+    }
   }
   return employee;
 }
