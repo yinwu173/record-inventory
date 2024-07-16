@@ -22,6 +22,10 @@ const collectEmployees = function() {
     salary: salary
   }
 
+  // salary needs to be entered as a number
+  salary = isNaN(Number(salary))  
+  
+
   // ask user if they want to add another employee
   const addMore = confirm("Would you like to add another employee?")
 
