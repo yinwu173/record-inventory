@@ -9,15 +9,9 @@ const collectEmployees = function () {
   let addAnotherEmployee = true
 
 
-  //gather info by prompting user and using variables listed in my object
-  const firstName = prompt("Please enter employee first name")
-  const lastName = prompt("Please enter employee last name")
-  const salary = prompt("Please enter employee salary")
-
-
   // add while loop so that user can choose to add another employee
   while(addAnotherEmployee) {
-    // ask user for another employee's first and last name and salary
+    // gather info by asking user for employee's first and last name and salary
     let firstName = prompt("Please enter employee first name")
     let lastName = prompt("Please enter employee last name")
     let salary = prompt("Please enter employee salary")
@@ -51,7 +45,6 @@ return employeesArray;
 // Display the average salary
 const displayAverageSalary = function(employeesArray) {
   // TODO: Calculate and display the average salary
-  const 
 
 
 
