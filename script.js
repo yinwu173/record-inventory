@@ -6,7 +6,7 @@ const collectEmployees = function () {
   // TODO: Get user input to create and return an array of employee objects
   // created an array
   const employeesArray = [];
-  let addAnotherEmployee = true
+  let addAnotherEmployee = true;
 
 
   // add while loop so that user can choose to add another employee
@@ -29,7 +29,7 @@ const collectEmployees = function () {
     };
 
     // to add and return an array use .push
-    employeesArray.push(employee)
+    employeesArray.push(employee);
 
     // ask user if they want to add another employee
     const addMore = confirm("Would you like to add another employee?")
