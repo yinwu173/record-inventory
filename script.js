@@ -2,59 +2,71 @@
 const addEmployeesBtn = document.querySelector('#add-employees-btn');
 
 // Collect employee data
-const collectEmployees = function() {
+const collectEmployees = function () {
   // TODO: Get user input to create and return an array of employee objects
   // created an array
-  const employees = [];
+  const employeesArray = [];
   let addAnotherEmployee = true
 
 
   //gather info by prompting user and using variables listed in my object
-  const firstName = prompt("Please enter your first name")
-  const lastName = prompt("Please enter your last name")
-  const salary = prompt("Please enter your salary")
+  const firstName = prompt("Please enter employee first name")
+  const lastName = prompt("Please enter employee last name")
+  const salary = prompt("Please enter employee salary")
 
 
-  //making an object to store user response
-  const employee = {
-    firstName: firstName,
-    lastName: lastName,
-    salary: salary
-  }
+  // add while loop so that user can choose to add another employee
+  while(addAnotherEmployee) {
+    // ask user for another employee's first and last name and salary
+    let firstName = prompt("Please enter employee first name")
+    let lastName = prompt("Please enter employee last name")
+    let salary = prompt("Please enter employee salary")
 
-  // salary needs to be entered as a number
-  salary = isNaN(Number(salary))  
-  
 
-  // ask user if they want to add another employee
-  const addMore = confirm("Would you like to add another employee?")
+    // salary needs to be entered as a number
+    salary = isNaN(Number(salary));
 
-  let (addAnotherEmployee) = true;
 
-    // add while loop so that user can choose to add another employee
-    while (addAnotherEmployee) {
+    //making an object to store user response
+    const employee = {
+      firstName: firstName,
+      lastName: lastName,
+      salary: salary
+    };
 
-      // ask user for another employee's first and last name and salary
-      let firstName = prompt("Please enter your first name")
-      let lastName = prompt("Please enter your last name")
-      let salary = prompt("Please enter your salary")
+    // to add and return an array use .push
+    employeesArray.push(employee)
+
+    // ask user if they want to add another employee
+    const addMore = confirm("Would you like to add another employee?")
 
     // if user does not want to add another employee, it would end the function
     if (!addAnotherEmployee) {
       return;
     }
   }
-  return employee;
+return employeesArray;
 }
 
 // Display the average salary
 const displayAverageSalary = function(employeesArray) {
   // TODO: Calculate and display the average salary
+
+
+
+
+
+
 }
 
 // Select a random employee
 const getRandomEmployee = function(employeesArray) {
   // TODO: Select and display a random employee
+
+
+
+
+
 }
 
 /*
