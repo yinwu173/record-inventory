@@ -36,7 +36,7 @@ const collectEmployees = function () {
 
     // if user does not want to add another employee, it would end the function
     if (!addAnotherEmployee) {
-      return;
+      addAnotherEmployee = false;
     }
   }
 return employeesArray;
