@@ -10,15 +10,15 @@ const collectEmployees = function () {
 
 
   // add while loop so that user can choose to add another employee
-  while(addAnotherEmployee) {
+  while(addAnotherEmployee){
     // gather info by asking user for employee's first and last name and salary
-    let firstName = prompt("Please enter employee first name")
-    let lastName = prompt("Please enter employee last name")
-    let salary = prompt("Please enter employee salary")
+    const firstName = prompt("Please enter employee first name")
+    const lastName = prompt("Please enter employee last name")
+    const salary = prompt("Please enter employee salary")
 
 
     // salary needs to be entered as a number
-    salary = isNaN(Number(salary));
+    // salary = isNaN(Number(salary));
 
 
     //making an object to store user response
@@ -33,12 +33,11 @@ const collectEmployees = function () {
 
     // ask user if they want to add another employee
     const addMore = confirm("Would you like to add another employee?")
-
     // if user does not want to add another employee, it would end the function
-    if (!addAnotherEmployee) {
+    if (!addMore){
       addAnotherEmployee = false;
     }
-  }
+}
 return employeesArray;
 }
 
@@ -60,12 +59,12 @@ const getRandomEmployee = function(employeesArray) {
   // TODO: Select and display a random employee
   // To randomly select an employee from the employees array
   // Math.floor rounds down the number and Math.random returns a random number - xpert learning assistant helped with deriving the code
-  const randomIndex = Math.floor(Math.random() * employeesArray.length)
+  const randomIndex = Math.floor(Math.random() * employeesArray.length);
   // To retrieve the randomly seleced employee from the array - xpert learning assistant helped with deriving the code
-  const randomEmployee = employeesArray[randomIndex]
+  const randomEmployee = employeesArray[randomIndex];
 
   // To display and log the randomly selected employee
-  console.log(`Congratulations to ${firstName} ${lastName}, our random drawing winner!`)
+  console.log(`Congratulations to ${firstName} ${lastName}, our random drawing winner!`);
 }
 
 /*
