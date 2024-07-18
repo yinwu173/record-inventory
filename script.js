@@ -45,19 +45,19 @@ return employeesArray;
 // Display the average salary
 const displayAverageSalary = function(employeesArray) {
   // TODO: Calculate and display the average salary
-  // 
+  // To calculate the total salary of the employees use the reduce method
   const totalSalary = employeesArray.reduce((acc, employee) => acc + employee.salary, 0);
-  // 
+  // To obtain the average salary, divide total salary over the employees array
   const averageSalary = totalSalary / employeesArray.length;
 
-  // logs the average salary of the employees
+  // This logs the average salary of the employees
   console.log(`The average employee salary between our ${employeesArray.length} employee(s) is $${averageSalary.length}`)
 }
 
 // Select a random employee
 const getRandomEmployee = function(employeesArray) {
   // TODO: Select and display a random employee
-  // Used random index to randomly select an employee from the employees array
+  // Use random index to randomly select an employee from the employees array
   const randomIndex = Math.floor(Math.random() * employeesArray.length)
   // To retrieve the randomly seleced employee from the array
   const randomEmployee = employeesArray[randomIndex]
