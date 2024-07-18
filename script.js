@@ -58,7 +58,8 @@ const displayAverageSalary = function(employeesArray) {
 // Select a random employee
 const getRandomEmployee = function(employeesArray) {
   // TODO: Select and display a random employee
-  // Use random index to randomly select an employee from the employees array
+  // To randomly select an employee from the employees array
+  // Math.floor rounds down the number and Math.random returns a random number 
   const randomIndex = Math.floor(Math.random() * employeesArray.length)
   // To retrieve the randomly seleced employee from the array
   const randomEmployee = employeesArray[randomIndex]
