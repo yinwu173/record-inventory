@@ -23,9 +23,9 @@ const collectEmployees = function () {
 
     //making an object to store user response
     const employee = {
-      firstName: firstName,
-      lastName: lastName,
-      salary: salary
+      firstName,
+      lastName,
+      salary
     };
 
     // to add and return an array use .push
