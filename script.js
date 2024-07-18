@@ -46,6 +46,7 @@ return employeesArray;
 const displayAverageSalary = function(employeesArray) {
   // TODO: Calculate and display the average salary
   // To calculate the total salary of the employees use the reduce method
+  // .reduce will accumulate all values in the employees array
   const totalSalary = employeesArray.reduce((acc, employee) => acc + employee.salary, 0);
   // To obtain the average salary, divide total salary over the employees array
   const averageSalary = totalSalary / employeesArray.length;
