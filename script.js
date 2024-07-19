@@ -64,7 +64,7 @@ const getRandomEmployee = function(employeesArray) {
   const randomEmployee = employeesArray[randomIndex];
 
   // To display and log the randomly selected employee
-  console.log(`Congratulations to ${firstName} ${lastName}, our random drawing winner!`);
+  console.log(`Congratulations to ${randomEmployee.firstName} ${randomEmployee.lastName}, our random drawing winner!`);
 }
 
 /*
