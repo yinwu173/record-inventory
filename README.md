@@ -32,5 +32,14 @@
 
  ## Acknowledgement and Resources
 
- * 
+ * [MDN Web Docs on Array.prototype.reduce() method](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce)
+
+* I received help from Xpert Learning Assistant with the code in line 48. The illustrated code uses the reduce method to calculate the total salary of the employees. The .reduce will accumulate all values in the employees array and sum up the salary.
+
+* [MDN Web Docs on Window.confirm() method](https://developer.mozilla.org/en-US/docs/Web/API/Window/confirm)
+
+*  [MDN Web Docs on Math.random() method](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random) 
+
+*  I received additional help from Xpert Learning Assistant with the code in line 62. Math.random helps to randomly select an employee from the employees array. It will get a random index from the array of employees. 
+
 
