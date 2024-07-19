@@ -24,7 +24,7 @@
 
  ## Screenshot of Application
 
- *
+ * ![Screenshot Application](<Screenshot Application.png>)
 
  ## Link to Deployed Application
 
